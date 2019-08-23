@@ -13,8 +13,9 @@ timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://joeybling.github.io/yilia-plus-demo/
+url: http://localhost/
 root: /yilia-plus-demo/
+#root: /
 permalink: :year/:month/:day/:title/
 #permalink: :category/:title/
 permalink_defaults:
@@ -103,8 +104,8 @@ jsonContent:
       tags: true
 
 # Extensions
-# plugins:
-#   - hexo-generator-feed
+plugins:
+  - hexo-generator-feed
 #Feed Atom
 feed:
   type: atom
