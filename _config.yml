@@ -103,8 +103,8 @@ jsonContent:
       tags: true
 
 # Extensions
-plugins:
-  hexo-generator-feed
+# plugins:
+#   - hexo-generator-feed
 #Feed Atom
 feed:
   type: atom
