@@ -3,21 +3,19 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: FunctorX
-#subtitle: Writing code is keep my heart beating only reason.
-description: FunctorX_Blog
-keywords: FunctorX,FunctorX_Blog
-author: KUN
-language: zh-Hans
-timezone: Asia/Shanghai
+title: Hexo
+subtitle:
+description:
+keywords:
+author: John Doe
+language: en
+timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://functorx.com/
-root: //
-#root: /
+url: http://yoursite.com
+root: /
 permalink: :year/:month/:day/:title/
-#permalink: :category/:title/
 permalink_defaults:
 
 # Directory
@@ -54,8 +52,6 @@ index_generator:
   path: ''
   per_page: 10
   order_by: -date
-    #top: 1
-    #date: -1
   
 # Category & Tag
 default_category: uncategorized
@@ -77,37 +73,9 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: yilia-plus
+theme: landscape
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type:
-
-jsonContent:
-    meta: false
-    pages: false
-    posts:
-      title: true
-      date: true
-      path: true
-      text: false
-      raw: false
-      content: false
-      slug: false
-      updated: false
-      comments: false
-      link: true
-      permalink: false
-      excerpt: false
-      categories: false
-      tags: true
-
-# Extensions
-plugins:
-  # - hexo-generator-feed
-#Feed Atom
-feed:
-  type: atom
-  path: atom.xml
-  limit: 20
