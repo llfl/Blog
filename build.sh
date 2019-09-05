@@ -1,6 +1,7 @@
 #!/bin/bash
 
 if [ "$1" = 'g' ] || [ "$1" = 'generate' ] || [ "$1" = '' ]; then
+    cp ./_config.theme.yml ./themes/next/_config.yml && \
     docker run --rm --name hexo-deploy -i \
                -v `pwd`/source:/hexo/source\
                -v `pwd`/themes:/hexo/themes\
