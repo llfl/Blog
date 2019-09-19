@@ -1,5 +1,16 @@
 #!/bin/bash
 
+if [ "$1" = 'init' ]; then
+    mkdir themes && git clone https://github.com/theme-next/hexo-theme-next.git themes/next
+    cp ./_config.theme.yml ./themes/next/_config.yml && \
+    docker run --rm --name hexo-deploy -i \
+               -v `pwd`/source:/hexo/source\
+               -v `pwd`/themes:/hexo/themes\
+               -v `pwd`/public:/hexo/public\
+               -v `pwd`/_config.yml:/hexo/_config.yml\
+               imux/hexo g
+fi
+
 if [ "$1" = 'g' ] || [ "$1" = 'generate' ] || [ "$1" = '' ]; then
     cp ./_config.theme.yml ./themes/next/_config.yml && \
     docker run --rm --name hexo-deploy -i \
